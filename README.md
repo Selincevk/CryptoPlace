@@ -1,13 +1,29 @@
-# React + Vite
+<h1>💸  Crypto Place</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Kullanıcıların en büyük kripto para birimlerini keşfetmesine, piyasa verilerini görüntülemesine ve zaman içindeki fiyat değişimlerini etkileşimli grafiklerle görselleştirmesine olanak tanıyan bir kripto para pazarı web uygulaması. React, Axios ve CoinGecko API kullanılarak geliştirilmiştir.
 
-Currently, two official plugins are available:
+<h1> Özellikler </h1>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+ **Kripto Para Arama**: İstediğiniz kripto parayı adıyla arayın.
+- **En Popüler Kripto Paralar**: Piyasa kapitalizasyonuna göre en büyük kripto paraları görüntüleyin.
+- **Coin Detayları**: Belirli bir coin hakkında detaylı bilgi, güncel fiyat ve fiyat grafiği görüntüleyin.
+- **Responsive UI**: Hem masaüstü hem de mobil cihazlar için optimize edilmiş temiz ve kullanıcı dostu arayüz.
 
-## Expanding the ESLint configuration
+<h1> Kullanılan Teknolojiler </h1>
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# CryptoPlace
+**React**: Kullanıcı arayüzünü oluşturmak için kullanılan ön yüz kütüphanesi.
+- **Axios**: CoinGecko API'sine HTTP istekleri göndermek için kullanıldı.
+- **React Router**: Sayfalar arasında gezinmek için yönlendirme kütüphanesi.
+- **Google Charts**: Etkileşimli çizgi grafikler oluşturmak için kullanıldı.
+- **Tailwind CSS**: Hızlı stil oluşturmak için kullanılan bir CSS framework'u.
+
+
+src/
+├── components/           # Yeniden kullanılabilir UI bileşenleri (CoinItem, LineChart)
+├── context/              # Global durum yönetimi (CoinContext)
+├── pages/                # Sayfa bileşenleri (Home, Detail)
+├── utils/                # Yardımcı fonksiyonlar (Axios API örneği)
+├── App.jsx               # Ana App bileşeni
+└── index.jsx             # React uygulamasının giriş noktası
+
+![](crypto.gif)
